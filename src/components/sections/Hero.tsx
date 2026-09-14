@@ -3,18 +3,18 @@ export default function Hero() {
     <section className="min-h-screen flex items-center bg-background">
       <div className="max-w-4xl mx-auto px-6 py-32">
         <p className="text-accent text-sm font-medium tracking-widest uppercase mb-4">
-          Disponible para nuevas oportunidades
+          Transformando datos en soluciones desde el primer día
         </p>
         <h1 className="text-5xl font-bold text-text-primary tracking-tight leading-tight mb-6">
           Max Malebrán Cortés
         </h1>
         <h2 className="text-2xl font-medium text-text-muted mb-6">
-          Ingeniero TI — Data Integration & ETL
+          Ingeniero TI · Desarrollo de Software · Data Integration &amp; ETL
         </h2>
         <p className="text-text-muted text-lg leading-relaxed max-w-2xl mb-10">
-          Diseño e implemento soluciones de integración de datos, automatización de procesos
-          y desarrollo de software. Combino experiencia en ETL, APIs de ERP y visualización
-          con formación en ciberseguridad OT.
+          Egresado de Ingeniería en Tecnologías de Información con experiencia real en
+          integración de datos, automatización de procesos, desarrollo de software y
+          ciberseguridad OT. Construyo soluciones que funcionan en producción.
         </p>
         <div className="flex gap-4">
           <a
