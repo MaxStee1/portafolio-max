@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center bg-background">
-      <div className="max-w-4xl mx-auto px-6 py-32">
+    <section className="min-h-screen flex items-start bg-background">
+      <div className="max-w-4xl mx-auto px-6 pt-24 pb-32 md:pt-40">
         <p className="text-accent text-sm font-medium tracking-widest uppercase mb-4">
           Transformando datos en soluciones desde el primer día
         </p>
