@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portafolio profesional — Max Malebrán Cortés
 
-## Getting Started
+Sitio web personal desarrollado con Next.js, TypeScript y Tailwind CSS. Presenta mi perfil profesional como Ingeniero en Tecnologías de Información, con foco en Data Integration, ETL, desarrollo de software y ciberseguridad OT.
 
-First, run the development server:
+🌐 **Sitio publicado:** [portafolio-max-ten.vercel.app](https://portafolio-max-ten.vercel.app)
+
+---
+
+## Stack tecnológico
+
+- **Framework:** Next.js 15 con App Router
+- **Lenguaje:** TypeScript
+- **Estilos:** Tailwind CSS v4
+- **Despliegue:** Vercel (CD automático desde GitHub)
+
+---
+
+## Correr localmente
 
 ```bash
+# Clonar el repositorio
+git clone https://github.com/MaxStee1/portfolio-max.git
+
+# Entrar al directorio
+cd portfolio-max
+
+# Instalar dependencias
+npm install
+
+# Iniciar servidor de desarrollo
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+El sitio estará disponible en `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Cómo agregar un proyecto nuevo
 
-## Learn More
+1. Abre `src/data/projects.ts`
+2. Agrega un nuevo objeto al array `projects` siguiendo esta estructura:
 
-To learn more about Next.js, take a look at the following resources:
+```ts
+{
+  name: "Nombre del proyecto",
+  description: "Descripción breve del proyecto.",
+  status: "En planificación", // "En planificación" | "En desarrollo" | "Publicado"
+  technologies: ["Tech 1", "Tech 2"],
+  repoUrl: "https://github.com/...", // opcional
+  liveUrl: "https://...",            // opcional
+}
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Guarda el archivo, haz commit y push. Vercel publicará los cambios automáticamente.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Estructura del proyecto
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+src/
+  app/
+    page.tsx        ← página principal
+    layout.tsx      ← layout global con nav y footer
+    globals.css     ← tokens de diseño y estilos base
+  components/
+    layout/         ← Nav y Footer
+    sections/       ← Hero, About, Experience, Skills, Projects, Education, Contact
+  data/
+    projects.ts     ← contenido de proyectos
+    skills.ts       ← habilidades agrupadas por área
+    experience.ts   ← experiencia profesional
+public/
+  cv.pdf            ← CV descargable
+```
