@@ -22,4 +22,11 @@ export const projects: Project[] = [
     status: "En planificación",
     technologies: ["Python", "Selenium", "APIs REST"],
   },
+    {
+    name: "RetroPlay Store",
+    description: "Tienda e-commerce de videojuegos fisicos para Play Station 2 desarrollada en Shopify. Incluye gestión de productos, carrito de compras y proceso de pago integrado.",
+    status: "Publicado",
+    technologies: ["Shopify", "Liquid", "E-commerce"],
+    liveUrl: "https://j2hctk-es.myshopify.com/",
+  },
 ];
