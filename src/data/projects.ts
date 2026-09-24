@@ -12,21 +12,23 @@ export type Project = {
 export const projects: Project[] = [
   {
     name: "DINERIN",
-    description: "Aplicación de gestión financiera personal. Permite registrar ingresos, gastos y visualizar el estado financiero mediante dashboards.",
-    status: "En planificación",
-    technologies: ["Next.js", "TypeScript", "PostgreSQL", "Power BI"],
+    description: "Aplicación full-stack de gestión financiera personal. Registra ingresos/gastos, categorización automática, dashboards interactivos con métricas de ahorro, metas presupuestarias y proyecciones. Arquitectura limpia con separación de capas.",
+    status: "En desarrollo",
+    technologies: ["Next.js 15", "TypeScript", "PostgreSQL", "Prisma", "Tailwind CSS", "Recharts", "NextAuth.js", "Zod"],
+    repoUrl: "https://github.com/MaxStee1/dinerin",
   },
   {
     name: "Job Hunter",
-    description: "Automatización de búsqueda y postulación laboral. Integra APIs de portales de empleo para filtrar y postular a ofertas relevantes automáticamente.",
+    description: "Sistema de automatización de búsqueda y postulación laboral. Scraping inteligente de portales (LinkedIn, Indeed, Glassdoor), filtrado por stack/ubicación/salario, scoring de匹配度, aplicación automática con cobertura de formularios dinámicos.",
     status: "En planificación",
-    technologies: ["Python", "Selenium", "APIs REST"],
+    technologies: ["Python", "Selenium", "Playwright", "BeautifulSoup", "PostgreSQL", "FastAPI", "Celery", "Redis", "Docker"],
+    repoUrl: "https://github.com/MaxStee1/job-hunter",
   },
-    {
+  {
     name: "RetroPlay Store",
-    description: "Tienda e-commerce de videojuegos fisicos para Play Station 2 desarrollada en Shopify. Incluye gestión de productos, carrito de compras y proceso de pago integrado.",
+    description: "E-commerce de videojuegos físicos para PlayStation 2 y pensado para agregar más consolas a futuro creado en Shopify. Catálogo con productos variados, carrito persistente, checkout optimizado, integración Webpay/Transbank.",
     status: "Publicado",
-    technologies: ["Shopify", "Liquid", "E-commerce"],
+    technologies: ["Shopify", "Liquid", "HTML/CSS", "JavaScript", "Webpay", "Responsive Design"],
     liveUrl: "https://j2hctk-es.myshopify.com/",
   },
 ];
