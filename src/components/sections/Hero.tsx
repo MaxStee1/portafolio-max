@@ -103,13 +103,28 @@ export default function Hero() {
           </motion.div>
         </motion.div>
 
+        {/* Status — visible solo en PC, pegado al fondo */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 1 }}
-          className="absolute bottom-10 left-6 right-6 md:static md:absolute md:bottom-0 md:left-auto md:right-0 w-full md:w-auto flex flex-col md:flex-row items-center md:items-end justify-center md:justify-end gap-4 pointer-events-none"
+          className="mt-10 md:hidden flex flex-col sm:flex-row items-center justify-center gap-4 pointer-events-none"
           aria-hidden="true"
         >
+          <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-8 text-text-dim font-mono text-xs uppercase tracking-wider">
+            <div className="flex items-center gap-2">
+              <div className="w-2 h-2 rounded-full bg-accent/50 animate-pulse" />
+              <span>Disponible para oportunidades</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="w-2 h-2 rounded-full bg-success/50" />
+              <span>Open to work</span>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Status + Scroll — solo en PC, absoluto al fondo */}
+        <div className="hidden md:flex absolute bottom-10 left-6 right-6 items-center justify-between pointer-events-none" aria-hidden="true">
           <div className="flex items-center gap-8 text-text-dim font-mono text-xs uppercase tracking-wider">
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-accent/50 animate-pulse" />
@@ -121,28 +136,16 @@ export default function Hero() {
             </div>
           </div>
           <motion.div
-            animate={{ y: [0, 10, 0] }}
+            animate={{ y: [0, 8, 0] }}
             transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-            className="text-accent/50"
+            className="text-text-dim font-mono text-xs uppercase tracking-widest flex items-center gap-2"
           >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            Scroll
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M12 5v14M19 12l-7 7-7-7" />
             </svg>
           </motion.div>
-        </motion.div>
-      </div>
-
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden md:block" aria-hidden="true">
-        <motion.div
-          animate={{ y: [0, 8, 0] }}
-          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-          className="text-text-dim font-mono text-xs uppercase tracking-widest flex items-center gap-2"
-        >
-          Scroll
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M12 5v14M19 12l-7 7-7-7" />
-          </svg>
-        </motion.div>
+        </div>
       </div>
     </section>
   );
