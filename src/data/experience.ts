@@ -27,7 +27,6 @@ export const experiences: Experience[] = [
       "Diseñé e implementé procesos ETL en Python mediante APIs del ERP Defontana, automatizando extracción, transformación y carga de datos.",
       "Migré la arquitectura de datos desde SQLite hacia PostgreSQL en servidor Ubuntu y automaticé ejecución diaria mediante cron jobs.",
       "Desarrollé dashboards comerciales en Power BI y automaticé su actualización mediante Power BI Service.",
-      "Analicé aproximadamente 27.000 clientes mediante segmentación RFM y clustering K-Means para identificar patrones de comportamiento.",
     ],
     technologies: ["Python", "PostgreSQL", "Power BI", "Linux", "Cron", "API Defontana", "Supabase"],
   },
